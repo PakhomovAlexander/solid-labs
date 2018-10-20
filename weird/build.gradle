@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+id 'groovy'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.15"
+
+    compile group: 'com.google.guava', name: 'guava', version: '11.0.2'
+    compile 'net.sf.supercsv:super-csv:2.4.0'
+
+    testCompile "org.spockframework:spock-core:1.2-groovy-2.4"
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'weird-code'
+include 'weird'
+include 'non-single-responsibility'
+include 'single-responsibility'
+
