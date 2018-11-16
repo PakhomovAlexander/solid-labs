@@ -1,27 +1,18 @@
-import org.supercsv.io.CsvListReader;
-import org.supercsv.prefs.CsvPreference;
-
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
-import static org.supercsv.prefs.CsvPreference.STANDARD_PREFERENCE;
-
-public class CsvReader {
+public class ModifiedCsvReader {
     private final String delimiter;
 
-    public CsvReader() {
+    public ModifiedCsvReader() {
         this(";");
     }
 
-    public CsvReader(String delimiter) {
+    public ModifiedCsvReader(String delimiter) {
         this.delimiter = delimiter;
     }
 

@@ -12,5 +12,13 @@ public class Main {
         ConsolePrinter printer = new ConsolePrinter();
         printer.setLines(lines)
                .print2Console();
+
+
+        ModifiedCsvReader modified = new ModifiedCsvReader(",");
+        Stream<List<String>> modifiedLines = modified.readCsvAsStream(path);
+
+        ConsolePrinter modifiedPrinter = new ConsolePrinter();
+        modifiedPrinter.setLines(modifiedLines)
+               .print2Console();
     }
 }
