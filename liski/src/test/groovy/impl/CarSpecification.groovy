@@ -48,7 +48,7 @@ class CarSpecification extends Specification {
         and:
         car.go2Point 600
 
-        then: 'gas is over ('
+        then: 'gas is not over'
         car.gas == 40
 
         where:

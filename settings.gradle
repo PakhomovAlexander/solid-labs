@@ -6,4 +6,6 @@ include 'open-close'
 include 'com.apakhomov'
 include 'apakhomov'
 include 'liski'
+include 'interfaces'
+include 'interfaces-bad-example'
 
